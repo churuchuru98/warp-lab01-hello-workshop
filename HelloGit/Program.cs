@@ -51,3 +51,18 @@ Console.Write("Ile jest dni wyprawy?");
 int expeditionDays = Convert.ToInt32(Console.ReadLine());
 double totalrations = rations / teamMembers * expeditionDays;
 Console.WriteLine($"Łączna ilość racji żywności na wyprawę: {totalrations}");
+//Zadanie 4
+Console.Write("Ile masz punktów życia? ");
+int healthPoints = Convert.ToInt32(Console.ReadLine());
+Console.Write("Ile masz mikstur? ");
+int potions = Convert.ToInt32(Console.ReadLine());
+Console.Write("Czy masz klucz? (true/false) ");
+bool hasKey = Convert.ToBoolean(Console.ReadLine());
+Console.Write("Czy masz mapę? (true/false) ");
+bool hasMap = Convert.ToBoolean(Console.ReadLine());
+bool alive = healthPoints > 0;
+bool hasFullHealth = healthPoints == 100;
+bool haveequipment = potions > 0;
+bool navigationItem = hasKey || hasMap;
+bool readyForAdventure = alive && hasFullHealth && haveequipment && navigationItem;
+Console.WriteLine($"Czy jesteś gotowy na przygodę? {readyForAdventure}");

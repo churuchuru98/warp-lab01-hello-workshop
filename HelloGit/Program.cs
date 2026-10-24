@@ -66,3 +66,14 @@ bool haveequipment = potions > 0;
 bool navigationItem = hasKey || hasMap;
 bool readyForAdventure = alive && hasFullHealth && haveequipment && navigationItem;
 Console.WriteLine($"Czy jesteś gotowy na przygodę? {readyForAdventure}");
+//Zadanie 5
+Console.Write("Podaj liczbę: ");
+int number = Convert.ToInt32(Console.ReadLine()); 
+if (number % 2 == 0)
+{
+    Console.WriteLine("Liczba jest parzysta.");
+}
+else
+{
+    Console.WriteLine("Liczba jest nieparzysta.");
+}

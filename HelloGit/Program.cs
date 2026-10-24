@@ -49,7 +49,7 @@ Console.Write("Ile jest członków drużyny? ");
 int teamMembers = Convert.ToInt32(Console.ReadLine());
 Console.Write("Ile jest dni wyprawy?");
 int expeditionDays = Convert.ToInt32(Console.ReadLine());
-double totalrations = rations / teamMembers * expeditionDays;
+double totalrations = rations / teamMembers / expeditionDays;
 Console.WriteLine($"Łączna ilość racji żywności na wyprawę: {totalrations}");
 //Zadanie 4
 Console.Write("Ile masz punktów życia? ");
@@ -116,4 +116,23 @@ else if (age >= 18 && age <= 64)
 else if(age >= 65)
 {
     Console.WriteLine("Jesteś seniorem.");
+}
+//Zadanie 8
+Console.Write("Ile masz punktów życia? ");
+int healthPoints8 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Czy masz klucz? (true/false) ");
+bool hasKey8 = Convert.ToBoolean(Console.ReadLine());
+Console.Write("Czy znasz hasło? (true/false) ");
+bool knowsPassword = Convert.ToBoolean(Console.ReadLine());
+if (healthPoints8 <= 0 )
+{
+    Console.WriteLine("Nie możesz wejść do lochu, ponieważ nie masz punktów życia.");
+}
+else if (!hasKey8 && !knowsPassword)
+{
+    Console.WriteLine("Nie możesz wejść do lochu, ponieważ nie masz klucza ani nie znasz hasła.");
+}
+else
+{
+    Console.WriteLine("Możesz wejść do lochu.");
 }

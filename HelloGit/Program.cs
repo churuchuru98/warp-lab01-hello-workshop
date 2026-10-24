@@ -98,3 +98,22 @@ switch (direction)
         Console.WriteLine("Nieznany kierunek.");
         break;
 }
+//Zadanie 7
+Console.Write("Podaj swój wiek: ");
+int age = Convert.ToInt32(Console.ReadLine());
+if (age >= 0 && age <= 12)
+{
+    Console.WriteLine("Wiek nie może być ujemny.");
+}
+else if (age >= 13 && age <= 17)
+{
+    Console.WriteLine("Jesteś nastolatkiem.");
+}
+else if (age >= 18 && age <= 64)
+{
+    Console.WriteLine("Jesteś dorosłym.");
+}
+else if(age >= 65)
+{
+    Console.WriteLine("Jesteś seniorem.");
+}

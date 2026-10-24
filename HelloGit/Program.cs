@@ -77,3 +77,24 @@ else
 {
     Console.WriteLine("Liczba jest nieparzysta.");
 }
+//Zadanie 6
+Console.Write("Podaj kierunek (N, S, E, W): ");
+string direction = Console.ReadLine().ToUpper();
+switch (direction)
+{
+    case "N":
+        Console.WriteLine("Idziesz na północ.");
+        break;
+    case "S":
+        Console.WriteLine("Idziesz na południe.");
+        break;
+    case "E":
+        Console.WriteLine("Idziesz na wschód.");
+        break;
+    case "W":
+        Console.WriteLine("Idziesz na zachód.");
+        break;
+    default:
+        Console.WriteLine("Nieznany kierunek.");
+        break;
+}

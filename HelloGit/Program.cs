@@ -42,3 +42,12 @@ Po treningu:
 Doświadczenie: {exp}
 Złoto: {goldbars}
 Trening: {training}");
+//Zadanie 3
+Console.Write("Ile jest racji żywności w Twoim ekwipunku? ");
+int rations = Convert.ToInt32(Console.ReadLine());
+Console.Write("Ile jest członków drużyny? ");
+int teamMembers = Convert.ToInt32(Console.ReadLine());
+Console.Write("Ile jest dni wyprawy?");
+int expeditionDays = Convert.ToInt32(Console.ReadLine());
+double totalrations = rations / teamMembers * expeditionDays;
+Console.WriteLine($"Łączna ilość racji żywności na wyprawę: {totalrations}");
